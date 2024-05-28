@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attribute</title>
+</head>
+<body>
+    <!-- action => takes url ,when ever the submit the from and redirecting to other page -->
+
+    <!-- <form action="./index.html">
+        <label for="">Country Code</label>
+
+        <input type="text" id="country_code" name="country_code" title="Three letter country code" 
+        pattern="[A-Za-z]{3}">
+    </form> -->
+
+    <!-- method attribute => Sending the data database to get and post method (htt method) -->
+    <!-- get =>it will send the data in url and it visible to user -->
+    <!-- post =>it will be not visible to user  -->
+
+    <form action="./index.html" method="get">
+        <label for="">Country Code</label>
+
+        <input type="text" id="country_code" name="country_code" title="Three letter country code" 
+        pattern="[A-Za-z]{3}">
+    </form>
+
+    <form action="./index.html" method="post">
+        <label for="">Country Code</label>
+
+        <input type="text" id="country_code" name="country_code" title="Three letter country code" 
+        pattern="[A-Za-z]{3}">
+    </form>
+
+    <!-- Validation  -->
+    <!-- Where you can add anything and you can submit? Hey Cortana, take automatically it will not validate your input data. Validation understood. It will just remove that. It will override your validation parameters, like your pattern. You have given this as a mandatory thing, but it will ignore it. Your browser will ignore this, and it  -->
+
+    <form action="./index.html" method="post" novalidate>
+        <label for="">Country Code</label>
+
+        <input type="text" id="country_code" name="country_code" title="Three letter country code" 
+        pattern="[A-Za-z]{3}">
+    </form>
+
+    <!-- Target =>Where want to submit-->
+    <form action="./index.html" method="post" target="_blank">
+        <label for="">Country Code</label>
+
+        <input type="text" id="country_code" name="country_code" title="Three letter country code" 
+        pattern="[A-Za-z]{3}">
+
+        <input type="submit" formtarget="_blank" value="Submit to a new tab">
+    </form>
+
+    <!-- fromenctype  (imp) -->
+    <!-- it used only post -->
+
+
+</body>
+</html>

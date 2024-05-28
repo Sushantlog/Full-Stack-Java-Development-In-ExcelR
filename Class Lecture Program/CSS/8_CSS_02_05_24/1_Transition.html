@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 200px;
+            background-color: aqua;
+            transition: width 2s height 2s;
+            /* transition-property: width;
+            transition-duration: 2s; */
+
+            /* Transition Delay Property */
+            transition-delay: 5s;
+
+            /* Transition-timing-function - Speed curve  => 
+            1. ease =>slow start then fast and end slowly end (default value) 
+            2.ease-in - slow start 
+            3.ease-out -slow end
+            4.ease-in-out - slow start and slow end
+            5.linear - same speed
+            */
+
+            
+        }
+        div:hover{
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Add Transition effect to a div's width -->
+    <div></div>
+</body>
+</html>

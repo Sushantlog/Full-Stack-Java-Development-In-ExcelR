@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object
+        const Person ={
+            firstName : "john",
+            lastName : "Doe",
+            fullname : function(){
+                return this.firstName + " " + this.lastName;
+            },
+        };
+
+        Person.fullname();
+
+
+        const Person1 = {
+            firstName : "Ross",
+            lastName : "N",
+        };
+
+        const Person2 = {
+            firstName : "Monica",
+            lastName : "S"
+        };
+
+        console.log(Person.fullname.call(Person1));
+        console.log(Person.fullname.call(Person2));
+
+        // call method accept arguments
+        console
+    </script>
+</body>
+</html>

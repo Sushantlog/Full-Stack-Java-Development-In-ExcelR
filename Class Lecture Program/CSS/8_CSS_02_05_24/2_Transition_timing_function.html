@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition-timing-function</title>
+    <style>
+            /* Transition-timing-function - Speed curve  => 
+            1. ease =>slow start then fast and end slowly end (default value) 
+            2.ease-in - slow start 
+            3.ease-out -slow end
+            4.ease-in-out - slow start and slow end
+            5.linear - same speed
+            */
+
+        div{
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+            transition: width 2s;
+        }
+        .linear{
+            transition-timing-function: linear;
+        }
+        .ease{
+            transition-timing-function: ease;
+        }
+        .ease-in{
+            transition-timing-function: ease-in;
+        }
+        .ease-out{
+            transition-timing-function: ease-out;
+        }
+        .ease-in-out{
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="linear">linear</div>
+    <div class="ease">Ease</div>
+    <div class="ease-in">Ease-In</div>
+    <div class="ease-out">Ease-Out</div>
+    <div class="ease-in-out">Ease-In-Out</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+Website - collection of web pages
+Types of web applications
+
+1)Static website - It doesnt deal with database
+examples - weather website,portfolio,resume,broachures,adds 
+
+2)Dynamic website - Which deals with database
+example - social media,e-commerce,food-delivery,ott platforms
+
+HTML - Hypertext Markup Language
+Hypertext - Text within text/ nested text
+markup - <>
+
+Its all about tags and elements 
+
+History of HTML
+- It was given by Team Berners lee - 1993
+- first version of HTML was - HTML 1.0
+- HTML 2
+- HTML 3
+- HTML - 5- latest version
+
+Basic Structure of HTML
+
+<HTML> - root tag / Parent tag - displays the data
+<head> - child to html
+	// meta data,files to be imported
+<title> First HTML Program</title>
+</head>
+
+<body>
+	<h1>welcome to ExcelR</h1>
+
+
+</body>
+
+</HTML>
+
+How to run html code
+- using browsers  - chrome - v8 engine
+		   edge - blink
+		   firefox- spider monkey
+	           explorer - chakra
+
+
+DOM - Document Object Model
+
+
+Tags in HTML
+1)Comments -  
+2)Heading Tags - h1,h2,h3,h4,h5,h6
+3)Paragraph Tags - <p>,<hr>,<br>, <pre>
+4)Formatting Tags - <b>,<strong>,<i>,<em>,<mark>,<small>,<del>,<ins>,<sub>,<sup>
+5)Lists - ordered list, unordered list, description list
+6)links - <a>
+7)image
+8)Tables
+9)Quotaion and citation tags - <blockquote>,<q>,<abbr>
+10)Multimedia Tags - video and audio 
+
+video - mp4,ogg,webm
+audio - mp3,ogg,wav
+
+Elements 
+- Inline - 
+- block - next line - div,
+
+Form Elements
+1)<input> - signle line input
+2)<label> - caption for other form elements
+3)<select> - dropdown 
+4)<textArea> - multi line input - address,feedback
+5)<button> - clickable element
+6)<fieldset> - group form elements
+7)<legend> - caption used with fieldset
+8)datalist - 
+9)optgroup
+10)option - 
+
+
+1)input - Types
+- text 
+- password
+- number 
+- email
+- submit
+- button
+- radio
+- checkbox
+- Date
+- image
+- file
+- range
+
+HTML input attributes
+- value - input value can be sent to database and dynamic
+- placeholder - static and readonly
+- readonly 
+- disabled
+- size - visible width 
+- maxlength 
+- max and min - 
+- multiple 
+- required
+- autocomplete - form,text,password,range and color
+- pattern - text,date,search,email,password
+
+Create a pattern for contact number ( India )
+
+Form attributes
+1)action - url - process the input
+2)method - get/post
+3)novalidate
+4)Target 
+5)formenctype - encode form data - post
+
+
+HTML5 
+- It is the current version of HTML
+- <audio><video>
+- semantic elements (important) - It is used to add meaningful data
+1)header - icon,(h1 to h6),navigation links,
+2)footer
+3)nav
+4)article - 
+5)section - 
+6)figure - content,diagram,photos,listings
+7)details - 
+
+
+semantic elements - which specifies the meaning are called semantic elements
+non-semantic elements - div, span
+
+
+
+
+
+
+
+
+

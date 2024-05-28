@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let first_Promise = new Promise((res, rej) =>{
+            setTimeout(() =>{
+                rej("Rejected after 1 second ");
+            },1000);
+        })
+        let second_promise = new Promise((res, rej) =>{
+            setTimeout(() =>{
+                rej("Rejected after 2 second ");
+            },2000);
+        })
+        let third_Promise = new Promise((res, rej) =>{
+            setTimeout(() =>{
+                rej("Rejected after 3 second ");
+            },3000);
+        });
+
+        try{
+            let result = Promise.all([
+                first_Promise,
+                second_promise,
+                third_Promise,
+            ]);
+
+            result,then((data) => console.log(data));
+        } catch (err) {
+            console.log(err);
+        }
+    </script>
+</body>
+</html>

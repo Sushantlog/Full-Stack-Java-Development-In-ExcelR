@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const Person = {
+            firstName : "Sushant",
+            lastName : "Patil",
+            display : function(){
+                // let x = document.getElementById("demo");
+                // x.innerHTML = this.firstName + " " + this.lastName;
+                console.log(this.firstName + " " + this.lastName);
+            },
+        };
+
+        let display = Person.display.bind(Person);
+
+        setTimeout(display,3000);
+    </script>
+</body>
+</html>

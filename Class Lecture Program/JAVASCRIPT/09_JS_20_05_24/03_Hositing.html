@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function call
+        // js support the function hoisting 
+        console.log(myFunction(5));
+
+        // Function Definition
+        function myFunction(y){
+            return y * y;
+        }
+
+        // Function Expressions are not hoisted even of we declare variable a with var then also it 
+        console.log(a(5));
+
+        const a = function(x){
+            return x * x;
+        };
+    </script>
+</body>
+</html>

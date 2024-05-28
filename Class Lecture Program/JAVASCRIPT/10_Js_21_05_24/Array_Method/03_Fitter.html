@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [10,20,30,40,50];
+
+        const result = numbers.filter((ele) => {
+            return ele > 25;
+        });
+
+        console.log(result);
+
+        // Removing the duplicate number in array by using set method
+        const number = [10,20,20,35,53,88];
+
+        const resultSetArr = new Set(number);
+        console.log(resultSetArr);
+    </script>
+</body>
+</html>

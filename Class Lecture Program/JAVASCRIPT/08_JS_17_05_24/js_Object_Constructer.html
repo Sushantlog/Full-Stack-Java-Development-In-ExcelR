@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // constructor function for an obj
+        function person(firstName,lastName,age){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+        }
+
+        // create object person
+
+        const person1 = new person("John","Doe",30);
+        // object call
+        console.log(person1);
+        console.log(person1.age);
+        console.log(person1.firstName);
+        console.log(person1.lastName);
+    </script>
+</body>
+</html>

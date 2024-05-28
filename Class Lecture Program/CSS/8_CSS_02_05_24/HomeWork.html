@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: aqua;
+            border: 1px solid black;
+            justify-content: center;
+            align-content: center;
+            height: 500px;
+            gap: 10px;
+            /*in this will depend on area */
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-template-areas:    'header header header header header'
+                                    'menu menu main main main '
+                                    'menu menu main main main '
+                                    'menu menu footer footer footer';
+            
+        }
+        .container > div{
+            background-color: greenyellow;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="grid-area: header;">Header</div>
+        <div style="grid-area: menu;">Menu</div>
+        <div style="grid-area: main;">Main</div>
+        <div style="grid-area: footer;">Footer</div>
+    </div>
+</body>
+</html>

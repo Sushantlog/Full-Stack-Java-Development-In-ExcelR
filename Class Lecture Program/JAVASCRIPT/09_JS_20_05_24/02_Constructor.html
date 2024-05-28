@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myFunction = new Function("a","b","return a*b");
+
+        const myFunctionadd = new Function("a", "b", "return a + b")
+        // invoke
+        let x = myFunction(4,3);
+        let y = myFunctionadd(5,5);  
+        // Add
+        console.log(x);
+        console.log(y);
+    </script>
+</body>
+</html>
