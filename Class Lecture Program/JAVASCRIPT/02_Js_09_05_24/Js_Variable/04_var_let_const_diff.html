@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- difference b/w var,let,const-->
+
+    <script>
+        // 1) scope of variable 
+        var a = 100;
+
+        function myFun(){
+            let x = 200;
+            const y = 300;
+            console.log(x);
+            console.log(y);
+            console.log(a);
+        }
+        // let and const are block element 
+        // console.log(x);
+        // console.log(y);
+        console.log(a);
+        myFun();
+
+        // 2) Redeclaration of variable
+        
+        var name;  //this is first declaration
+        console.log(name);
+
+        var name = 10;      //second declaration 
+        console.log(name);
+
+        // check let
+        let str;  //first declaration
+        console.log(str);
+
+        // let str;  //second declaration
+
+        // check with const
+
+        // const str; //const redeclaration
+
+
+        // 3) Reassignment of a variable
+
+        // var
+        var n = 100; //first assignment
+        n = 500;   //second assignment
+        console.log(n);
+
+        // let
+        let number = 200; //first assignment
+
+        number = 400; //second assignment
+        console.log(number);
+
+        //const
+        const p = 600; //first assignment
+        // p = 500;  //second assignment
+
+
+        //  4) Hoisting 
+
+        // var
+        console.log(student);
+        var student; //declaration
+
+        // let
+        // console.log(h);
+        // uncomment if required
+        // let h; //declaration using let
+
+        //const
+        console.log(s);
+        const s = 100;
+
+    </script>
+</body>
+</html>
