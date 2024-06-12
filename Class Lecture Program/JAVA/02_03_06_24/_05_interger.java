@@ -12,6 +12,7 @@ public class _05_interger {
         int myNum3 = 10000;
         System.out.println(myNum3);
 
-
+        int myNum4 = 1005;
+        System.out.println(myNum4);
     }
 } 

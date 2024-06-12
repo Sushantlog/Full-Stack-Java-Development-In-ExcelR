@@ -7,5 +7,11 @@ public class _08_Charater {
         // String type - group of chars
         String str = "Hello World";
         System.out.println(str);
+
+        char myChar = 'a';
+        System.out.println(myChar);
+
+        String str1 = "Hello Sushant";
+        System.out.println(str1);
     }
 }
