@@ -5,5 +5,9 @@ public class _01_Widening_Casting {
 
         System.out.println(myInt);
         System.out.println(myDouble);
+
+        int  my = 55555;
+        long longData = my;
+        System.out.println(longData);
     }
 }
