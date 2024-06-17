@@ -1,7 +1,6 @@
-public class _01_Example_Class {
-
+public class _01_Factorial{
     public static void main(String[] args) {
-        // State or Field
+        int number = 4,result;
         
     }
 }

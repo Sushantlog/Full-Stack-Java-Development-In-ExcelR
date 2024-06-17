@@ -1,4 +1,4 @@
-public class _04_Overloding {
+public class _04_Change_Parameter_Overloding{
     // overloading  - changing the type of parameter
 
     // first method with Int type

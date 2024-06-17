@@ -17,14 +17,17 @@ class Lamp{
 
 public class _02_Example {
     public static void main(String[] args) {
-        // Create object led and helogen
+        // Create object led and helogen of lamp class
+        //          or
+        // led and halogen are the two object created using lamp class
         Lamp led = new Lamp();
-        Lamp helogen = new Lamp();
+        Lamp halogen = new Lamp();
 
         // turn on Light calling turnOn()
+        // accessing and running turnon() method for led object
         led.turnOn();
 
         // turn off the helogen obj
-        helogen.turnOff();
+        halogen.turnOff();
     }
 }

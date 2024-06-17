@@ -14,10 +14,11 @@ public class _03_Lamp_OnOff {
     }
 
     public static void main(String[] args) {
-        // create an object of Lamp1
+        // create an object of Lamp_OnOff class
         _03_Lamp_OnOff led = new _03_Lamp_OnOff();
 
         // access method using object
+        // led object can access the turnOn and turnOff Method
         led.turnOn();
 
         led.turnOff();

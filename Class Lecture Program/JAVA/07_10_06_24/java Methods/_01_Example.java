@@ -1,4 +1,5 @@
 public class _01_Example {
+    // User Defined function (method)
     // create a method
     public int addNumber(int a,int b){
         int sum = a + b;

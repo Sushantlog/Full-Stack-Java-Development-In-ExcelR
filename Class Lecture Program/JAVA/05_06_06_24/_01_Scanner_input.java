@@ -9,14 +9,18 @@ public class _01_Scanner_input {
 
         // Getting float input
         System.out.println("Enter Float : ");
+        float myFloat = input.nextFloat();
+        System.out.println("You Have Entered : " + myFloat);
+
+        System.out.println("Enter Double : ");
         Double myDouble = input.nextDouble();
         System.out.println("You Have Entered : " + myDouble);
 
         System.out.println("Enter String : ");
-        String myStr = input.next();
+        String myStr = input.next();   //next will be accesses text input
         System.out.println("You Have Entered : " + myStr);
         
         // closing input object
         input.close();
     }
-}
+}  
