@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <div class="session-title">SESSION</div>
+            <div id="time" class="time">25:00</div>
+        </div>
+        <div class="controls">
+            <div class="control-row">
+                <button id="session-decrement" class="btn btn-blue">-</button>
+                <div class="label">SESSION LENGTH</div>
+                <div id="session-length" class="value">25</div>
+                <button id="session-increment" class="btn btn-blue">+</button>
+            </div>
+            <div class="control-row">
+                <button id="break-decrement" class="btn btn-blue">-</button>
+                <div class="label">BREAK LENGTH</div>
+                <div id="break-length" class="value">5</div>
+                <button id="break-increment" class="btn btn-blue">+</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="reset" class="btn btn-brown">Reset</button>
+            <button id="start" class="btn btn-green">Start</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

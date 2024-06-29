@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Swap</title>
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; 
+}
+
+table {
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+    background-color: #fff; 
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #e0e0e0; 
+}
+
+</style>
+<body>
+    <table id="numberTable" border="1">
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">1</td>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">2</td>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">3</td>
+        </tr>
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">4</td>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">5</td>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">6</td>
+        </tr>
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">7</td>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">8</td>
+            <td draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">9</td>
+        </tr>
+    </table>
+
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.innerText);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            var targetData = event.target.innerText;
+            event.target.innerText = data;
+
+            
+            var tableCells = document.querySelectorAll("#numberTable td");
+            tableCells.forEach(function(cell) {
+                if (cell.innerText === data && cell !== event.target) {
+                    cell.innerText = targetData;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

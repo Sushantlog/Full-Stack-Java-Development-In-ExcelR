@@ -15,5 +15,6 @@ public class _01_Interface_Class {
     public static void main(String[] args) {
         ProgrammingLanguage lane = new ProgrammingLanguage();
         lane.getName("Java");
+        lane.getName("C");
     }
 }

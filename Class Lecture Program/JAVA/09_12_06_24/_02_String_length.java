@@ -1,7 +1,7 @@
 public class _02_String_length {
     // String length 
     public static void main(String[] args) {
-        String greet = "Hello Word";
+        String greet = "Hello World";
         System.out.println("String = " + greet);
 
         // to get the length of the above string 

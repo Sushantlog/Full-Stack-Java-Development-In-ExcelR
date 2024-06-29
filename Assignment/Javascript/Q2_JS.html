@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 2 q</title>
+</head>
+<body>
+    <h3>Write a program to demonstrate different array and string methods in JavaScript?</h3>
+    <p>open console</p>
+
+    <script>
+        var arr1=[1,2,3,4,5,6]
+
+        var ans=arr1.join("  ");
+        console.log("joined string :" + arr1);
+
+        arr1.push(7)
+        arr1.push(8)
+        // console.log("after push operation :" + arr1);
+        console.log("after push :");
+        console.log(arr1);
+
+        console.log("after pop :");
+        arr1.pop();
+        arr1.pop();
+        console.log(arr1);
+
+        console.log("after shift :");
+        arr1.shift();
+        console.log(arr1);
+
+        console.log("after unshift :");
+        arr1.unshift(0);
+        console.log(arr1);
+
+        var ind=5;
+        console.log(`index of ${ind} : ${arr1[ind]}`);
+
+
+        let search=3;
+        console.log(`search for ${search}: ${arr1.includes(33)} `);
+        
+
+        console.log('after reverse');
+        var reverse=arr1.reverse();
+        console.log(reverse)
+
+        console.log('after sort');
+        var sort=arr1.sort();
+        console.log(reverse)
+
+        var mystring="javascript is awsome";
+        console.log(mystring.toUpperCase());
+
+        // var mystring1="javascript is awsome";
+        console.log(mystring.toLowerCase());
+
+        console.log("string of length :" + mystring.length);
+
+        console.log("index of is is :" + mystring.indexOf("is"));
+
+        console.log("sub string is :" + mystring.substring(4,9));
+
+        console.log("replace a string  awsome" + mystring.replace("awsome","amazing!"))
+
+        console.log("spliting  a string :");
+        console.log(mystring.split(" "));
+    </script>
+</body>
+</html>

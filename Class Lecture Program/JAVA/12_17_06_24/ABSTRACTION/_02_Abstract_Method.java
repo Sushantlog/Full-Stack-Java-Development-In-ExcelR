@@ -1,6 +1,10 @@
 // creating abstract method.
 
 // Abstract class
+
+// import Inheritance.Animal;
+// import Inheritance.Dog;
+
 abstract class Animal{
     // Abstract method
     abstract void makeSound();
@@ -18,6 +22,12 @@ class Dog extends Animal {
         System.out.println("Bark Bark...");
     }
 }
+// Extends multiple class 
+class Cow extends Animal{
+    public void makeSound(){
+        System.out.println("It is Cow");
+    }
+}
 
 public class _02_Abstract_Method {
     public static void main(String[] args) {
@@ -26,5 +36,8 @@ public class _02_Abstract_Method {
 
         d1.makeSound();
         d1.eat();
+
+        Cow c1 = new Cow();
+        c1.makeSound();
     }
 }

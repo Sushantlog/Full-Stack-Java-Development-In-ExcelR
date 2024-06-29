@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Q 3</title>
+</head>
+
+<body>
+  <h3>
+    Q3) Write a program to show different ways to create a function in JavaScript?
+  </h3>
+  <p>open console</p>
+
+  <script>
+    function myfunction() {
+      console.log("Hello, Alice (function Declaration)");
+    }
+
+    myfunction();
+
+    const functionExpression = function (name) {
+      console.log("hello ," + name + " (function expression)");
+    };
+    functionExpression("bob");
+
+    const ArrowFunction = (name) => {
+      console.log("hello," + name + " (arrow function expression)");
+    };
+
+    ArrowFunction("Charlie");
+
+    let FunctionConstructor = new Function(
+      "name",
+      'return "hello " + name + " (construction function expression)"'
+    );
+
+    console.log(FunctionConstructor("dave"));
+
+    (function (name) {
+      console.log("hello," + name + " (IIFe function expression)");
+    })("Eva");
+
+
+
+    function* generator(name) {
+      yield "hello" + name + "(generator function)";
+    }
+
+    const gen = generator("world");
+
+    console.log(gen.next().value);
+
+
+    function myFunction(name) {
+      return "Hello " + name + "(return function)";
+    }
+
+    console.log(myFunction("Frank"));
+
+    const data = {
+      name: "Frank",
+      type: " object function"
+    }
+
+    let text = Object.entries(data);
+    console.log(text)
+
+
+
+  </script>
+</body>
+
+</html>

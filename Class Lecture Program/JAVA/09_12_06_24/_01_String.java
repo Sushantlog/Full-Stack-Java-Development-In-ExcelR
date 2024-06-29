@@ -4,6 +4,7 @@ public class _01_String {
         String first ="Java";
         String Second = "Python";
 
-        System.out.println("Programming ")
+        System.out.println("Programming Language : "+first);
+        System.out.println("Programming Language : "+Second);
     }
 }

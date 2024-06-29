@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Concepts Demonstration</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // let and const
+        let x = 10;
+        const y = 20;
+        if (true) {
+            let x = 30;
+            const y = 40;
+            console.log(x); // 30
+            console.log(y); // 40
+        }
+        console.log(x); // 10
+        console.log(y); // 20
+
+        // Arrow Functions
+        const add = (a, b) => a + b;
+        console.log(add(5, 3)); // 8
+
+        // Template Literals
+        const name = 'Aditya';
+        const message = `Hello, ${name}! Welcome to ES6.`;
+        console.log(message); 
+
+        // Default Parameters
+        function greet(name = 'Guest') {
+            return `Hello, ${name}!`;
+        }
+        console.log(greet()); // Hello, Guest!
+        console.log(greet('Archit')); // Hello, Archit!
+
+        // Destructuring Assignment
+        // Array Destructuring
+        const [a, b] = [1, 2];
+        console.log(a, b); // 1 2
+        // Object Destructuring
+        const { name: personName, age } = { name: 'Archit', age: 25 };
+        console.log(personName, age); // Alice 25
+
+        // Spread Operator
+        const arr1 = [1, 2, 3];
+        const arr2 = [...arr1, 4, 5];
+        console.log(arr2); // [1, 2, 3, 4, 5]
+
+        const obj1 = { a: 1, b: 2 };
+        const obj2 = { ...obj1, c: 3 };
+        console.log(obj2); // { a: 1, b: 2, c: 3 }
+
+        // Rest Parameters
+        function sum(...numbers) {
+            return numbers.reduce((acc, num) => acc + num, 0);
+        }
+        console.log(sum(1, 2, 3, 4)); // 10
+
+        // Classes
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            greet() {
+                return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+            }
+        }
+        const person1 = new Person('Archit', 25);
+        console.log(person1.greet()); // Hello, my name is Alice and I am 25 years old.
+
+        // Promises
+        const myPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('Promise resolved!');
+            }, 1000);
+        });
+        myPromise.then((message) => {
+            console.log(message); // Promise resolved!
+        }).catch((error) => {
+            console.error(error);
+        });
+
+        // Generators
+        function* generateNumbers() {
+            yield 1;
+            yield 2;
+            yield 3;
+        }
+        const gen = generateNumbers();
+        console.log(gen.next().value); // 1
+        console.log(gen.next().value); // 2
+        console.log(gen.next().value); // 3
+
+        // Symbol
+        const sym1 = Symbol('description');
+        const sym2 = Symbol('description');
+        console.log(sym1 === sym2); // false
+
+        const obj = {
+            [sym1]: 'value1',
+            [sym2]: 'value2'
+        };
+        console.log(obj[sym1]); // value1
+        console.log(obj[sym2]); // value2
+
+        // Map and Set
+        // Map
+        const map = new Map();
+        map.set('key1', 'value1');
+        map.set('key2', 'value2');
+        console.log(map.get('key1')); // value1
+
+        // Set
+        const set = new Set();
+        set.add(1);
+        set.add(2);
+        set.add(2); // Duplicates are ignored
+        console.log(set.has(1)); // true
+        console.log(set.size); // 2
+    </script>
+</body>
+</html>

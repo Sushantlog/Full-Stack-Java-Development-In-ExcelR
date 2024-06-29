@@ -1,5 +1,7 @@
+
+// super class
 class Employees{
-    // StringClass
+    // SuperClass
     String name;   //Employees name
     int id;        //Employees ID
 
@@ -28,9 +30,22 @@ class FullStackDeveloper extends Employees implements JavaDeveloper, PythonDevel
         super(name, id);  //call the superclass constructor
     }
 
-    publi
+    public void writeJavaCode(){
+        System.out.println(name + " is writing java code");
+    }
+
+    public void writePythonCode(){
+        System.out.println(name + " is writing python code");
+    }
 }
 
 public class Company {
-    
+    public static void main(String[] args) {
+        FullStackDeveloper developer = new FullStackDeveloper("Sushant", 1);
+
+        developer.display();  //superclass
+
+        developer.writeJavaCode(); //interface 1
+        developer.writePythonCode(); //interface 2
+    }
 }
