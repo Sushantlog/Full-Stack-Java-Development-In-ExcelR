@@ -9,6 +9,13 @@ begin
 select * from customers order by country;
 end //
 
+DELIMITER //
+CREATE PROCEDURE display_customer()
+BEGIN
+   SELECT cust_id,country FROM customers ORDER BY country;
+END //
+DELIMITER ;
+
 call display_customer;
 
 -- drop procedure
